@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Bandwidth Allocation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="images/DynetSecure Logo.png" alt="DynetSecure Logo" />
+        <span>DynetSecure</span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li class="dropdown">
+            <a href="#project-scope" class="nav-link dropdown-toggle">Project Scope <i class="fa fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#literature-survey" class="dropdown-item">Literature Survey</a></li>
+              <li><a href="#research-gap" class="dropdown-item">Research Gap</a></li>
+              <li><a href="#research-problem" class="dropdown-item">Research Problem & Solution</a></li>
+              <li><a href="#objectives" class="dropdown-item">Research Objectives</a></li>
+              <li><a href="#methodology" class="dropdown-item">Methodology</a></li>
+              <li><a href="#technologies" class="dropdown-item">Technologies</a></li>
+            </ul>
+          </li>
+          <li><a href="#project-timeline" class="nav-link">Project Timeline</a></li>
+          <li class="dropdown">
+            <a href="#downloads" class="nav-link dropdown-toggle">Downloads <i class="fa fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#downloads" class="dropdown-item">Project Documents</a></li>
+              <li><a href="#presentations" class="dropdown-item">Presentations</a></li>
+            </ul>
+          </li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section">
+    <video class="hero-bg-video" src="video/background2.mp4" autoplay loop muted playsinline></video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">DynetSecure</h1>
+      <p class="hero-subtitle">Enterprise network architecture with dynamic resources allocation.</p>
+      <a href="#literature-survey" class="scroll-btn hero-scroll-btn">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Literature Survey Section -->
+    <section id="literature-survey" class="section literature-section">
+      <h2 class="section-title" data-aos="fade-up">Literature Survey</h2>
+      <div class="literature-survey-split">
+        <div class="literature-left" data-aos="fade-right" data-aos-once="true">
+          <ul class="literature-points">
+            <li>Our survey explored various contemporary enterprise architectures and the challenges they face in hybrid and P2P environments.</li>
+            <li>It revealed critical gaps in static resource allocation, data packet prioritization under load, inefficient synchronization techniques in distributed systems, and poor scalability in existing solutions.</li>
+            <li>Technologies such as SDN, NFV, and ML have been partially adopted, but most implementations lack real-time adaptiveness and coordination across modules.</li>
+            <li>Peer-reviewed studies on adaptive enterprise frameworks underline the growing need for dynamic traffic management, ML-enhanced allocation, intelligent node selection, and contextual data syncing models.</li>
+          </ul>
+        </div>
+        <div class="literature-right">
+          <div class="literature-card" data-aos="fade-left" data-aos-once="true">
+            <h3>References</h3>
+            <ol class="literature-insights">
+              <li>Deep Packet Inspection Leveraging Machine Learning for Efficient Network Security Analysis. Available: <a href="https://www.researchgate.net/publication/378936600_Deep_Packet_Inspection_Leveraging_Machine_Learning_for_Efficient_Network_Security_Analysis" target="_blank">Referance link</a></li>
+              <li>Dynamic Bandwidth Allocation Using AI in MTC/HTC Scenarios. Available: <a href="https://jwcn-eurasipjournals.springeropen.com/articles/10.1186/s13638-024-02400-5" target="_blank">Referance link</a></li>
+              <li>Dynamic Bandwidth Allocation in Optical Networks Using Machine Learning. Available: <a href="https://www.researchgate.net/publication/353447614_DYNAMIC_BANDWIDTH_ALLOCATION_IN_OPTICAL_NETWORKS_USING_MACHINE_LEARNING" target="_blank">Referance link</a></li>
+              <li>Intelligent Network Bandwidth Allocation for Industry 4.0 Systems. Available: <a href="https://dl.acm.org/doi/10.1109/CASE49997.2022.9926628" target="_blank">Referance link</a></li>
+              <li>Edge-Based AI Framework for Traffic Classification in SDN. Available: <a href="https://dl.acm.org/doi/abs/10.1007/s11227-022-04929-y" target="_blank">Referance link</a></li>
+              <li>Traffic Identification Using ML Techniques and Feature Optimization. Available: <a href="https://www.sciencedirect.com/science/article/abs/pii/S106852002100105X" target="_blank">Referance link</a></li>
+              <li>Intelligent Traffic Prioritization in IoT Gateways. Available: <a href="https://joiv.org/index.php/joiv/article/viewFile/2169/1129" target="_blank">Referance link</a></li>
+              <li>AI-Based Traffic Classification Review. Available: <a href="https://peerj.com/articles/cs-2863/" target="_blank">Referance link</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Gap Section -->
+    <section id="research-gap" class="section research-gap-section">
+      <h2 class="section-title" data-aos="fade-up">Research Gap</h2>
+      <div class="gap-cards">
+        <div class="gap-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="gap-card-bar"></div>
+          <div class="gap-card-content">
+            <h3>Dynamic Traffic Prioritization</h3>
+            <p>Existing enterprise networks lack adaptive mechanisms to classify and prioritize traffic in real time based on packet context and urgency.</p>
+          </div>
+        </div>
+        <div class="gap-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="gap-card-bar"></div>
+          <h3>ML-Driven Bandwidth Allocation</h3>
+          <p>Traditional resource allocation models are static and do not leverage predictive intelligence to adjust bandwidth according to network behavior trends.</p>
+          <div class="gap-card-content"></div>
+        </div>
+        <div class="gap-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="gap-card-bar"></div>
+          <h3>Nearest Node Identification </h3>
+          <p>Most peer-to-peer systems fail to implement efficient node selection algorithms that consider both proximity and synchronization relevance.</p>
+          <div class="gap-card-content"></div>
+        </div>
+        <div class="gap-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="gap-card-bar"></div>
+          <h3>Adaptive Data Synchronization Framework </h3>
+          <p>Synchronization in hybrid enterprise networks often relies on fixed intervals, ignoring real-time network fluctuations and data criticality.</p>
+          <div class="gap-card-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Problem & Solution Section -->
+    <section id="research-problem" class="section research-problem-section">
+      <h2 class="section-title">Research Problem & Solution</h2>
+      <div class="problem-content-cards">
+        <div class="problem-card" data-aos="fade-up" tabindex="0">
+          <div class="problem-subtopic" data-aos="fade-right" tabindex="0">
+            <h3 class="problem-heading">Observed Problem</h3>
+            <p class="problem-desc">
+              How can enterprise networks adopt a dynamically adaptive architecture that integrates real-time traffic prioritization, intelligent resource allocation, peer-based node optimization, and efficient data synchronization to ensure scalability, resilience, and performance under variable network conditions and data loads?
+            </p>
+          </div>
+          <div class="problem-subtopic" data-aos="fade-left" tabindex="0">
+            <h3 class="problem-heading">Proposed Solution</h3>
+            <p class="problem-desc">
+              To address the limitations of traditional static network designs, this research proposes a modular, adaptive framework that integrates four intelligent components: dynamic traffic prioritization for context-aware packet handling, machine learning-driven resource allocation to predictively manage bandwidth, nearest node identification to optimize peer-to-peer efficiency, and an adaptive data synchronization framework that adjusts based on real-time network conditions. Together, these modules operate cohesively to enable enterprise networks to dynamically respond to fluctuating loads, ensure consistent performance, and scale effectively across hybrid and decentralized infrastructures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Objectives Section -->
+    <section id="objectives" class="section">
+      <h2 class="section-title">Research Objectives</h2>
+      <div class="timeline">
+        <div class="timeline-item timeline-left" data-aos="fade-right">
+          <div class="timeline-icon objective-icon"><img src="images/objective 4.jpg" alt="Objective 1" /></div>
+          <div class="timeline-content">
+            <h3>Dynamic Traffic Prioritization</h3>
+            <p>To develop a dynamic traffic prioritization module that can adapt to contextual data packet sensitivity.</p>
+          </div>
+        </div>
+        <div class="timeline-item timeline-right" data-aos="fade-left">
+          <div class="timeline-icon objective-icon"><img src="images/objective 1.jpg" alt="Objective 2" /></div>
+          <div class="timeline-content">
+            <h3>ML-Driven Bandwidth Allocation</h3>
+            <p>To implement a machine learning-based decision engine for proactive resource management.</p>
+          </div>
+        </div>
+        <div class="timeline-item timeline-left" data-aos="fade-right">
+          <div class="timeline-icon objective-icon"><img src="images/objective 3.jpg" alt="Objective 3" /></div>
+          <div class="timeline-content">
+            <h3>Nearest Node Identification</h3>
+            <p>To identify and integrate nearest node identification mechanisms to improve peer-to-peer efficiency.</p>
+          </div>
+        </div>
+        <div class="timeline-item timeline-right" data-aos="fade-left">
+          <div class="timeline-icon objective-icon"><img src="images/objective 2.jpg" alt="Objective 4" /></div>
+          <div class="timeline-content">
+            <h3>Adaptive Data Synchronization Framework</h3>
+            <p>To construct an adaptive synchronization framework that dynamically adjusts based on network state and query frequency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="section methodology-section">
+      <h2 class="section-title">Methodology</h2>
+      <div class="methodology-card-container">
+        <div class="methodology-card">
+          <div class="methodology-line"></div>
+          <div class="methodology-desc">
+            <ul class="methodology-list">
+              <p>The project follows an iterative, modular methodology. Each of the four components Dynamic Traffic Prioritization, Machine Learning Based Dynamic Bandwidth Allocation, Nearest Node Identification, and Adaptive data Synchronization framework will be prototyped and validated separately using simulation tools and synthetic datasets. After successful validation, these components will be integrated and tested in a hybrid enterprise network simulation environment (e.g., Mininet, GNS3).</br></br>
+                The feedback loop involves real-time data capture and condition-based logic adaptation. Performance will be evaluated based on metrics like latency, throughput, synchronization lag, and fault tolerance.</br></br>
+                During the modular development stage, unit tests and controlled benchmarking will be conducted to observe performance under varied loads and configurations. Cross-component compatibility testing will be crucial in identifying potential bottlenecks or interaction issues. We will adopt an agile approach for iterative refinement and responsiveness to simulation outcomes.</br></br>
+                Finally, a phased deployment in a lab-scale enterprise network environment will be performed to validate the solution in near-real-world conditions. This environment will simulate common enterprise scenarios like data surges, peer disconnections, and anomaly generation. Collected data will be analyzed using both qualitative assessments and quantitative performance indicators.
+                </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section technologies-section">
+      <h2 class="section-title" data-aos="fade-up">Technologies</h2>
+      <div class="tech-grid">
+        <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="tech-logo"><img src="images/Python.png" alt="Python"></div>
+          <div class="tech-name">Python</div>
+          <div class="tech-desc">Backend development and machine learning.</div>
+        </div>
+        <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-logo"><img src="images/azur.png" alt="Azur"></div>
+          <div class="tech-name">Azure</div>
+          <div class="tech-desc">Cloud platform for deployment</div>
+        </div>
+        <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="tech-logo"><img src="images/GNS3.png" alt="GNS3"></div>
+          <div class="tech-name">GNS3</div>
+          <div class="tech-desc">Simulate a realistic network environment</div>
+        </div>
+        <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="tech-logo"><img src="images/vmware.png" alt="vm ware"></div>
+          <div class="tech-name">VMware Workstation</div>
+          <div class="tech-desc">Create and manage virtual machines for testing.</div>
+        </div>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="tech-logo"><img src="images/Mongo DB.png" alt="Mongo DB"></div>
+          <div class="tech-name">Mongo DB</div>
+          <div class="tech-desc">Capture packet save</div>
+        </div>
+        <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-logo"><img src="images/VS Code.png" alt="VS Code"></div>
+          <div class="tech-name">VS Code</div>
+          <div class="tech-desc">Backend development</div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Project Timeline: After Technologies -->
+    <section id="project-timeline" class="section">
+      <h2 class="section-title">Project Timeline</h2>
+      <div class="project-timeline">
+        <div class="timeline-line"></div>
+        <div class="milestone milestone-right" data-aos="fade-right">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Project Proposal</h3>
+            <span class="milestone-date">Jan 2024</span>
+            <p>Initial project proposal submitted and reviewed by the research committee.</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:6%"></div></div>
+            <span class="milestone-marks">Marks: 6%</span>
+          </div>
+        </div>
+        <div class="milestone milestone-left" data-aos="fade-left">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Progress Presentation I</h3>
+            <span class="milestone-date">Feb 2024</span>
+            <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:12%"></div></div>
+            <span class="milestone-marks">Marks: 6%</span>
+          </div>
+        </div>
+        <div class="milestone milestone-right" data-aos="fade-right">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Research Paper</h3>
+            <span class="milestone-date">Mar 2024</span>
+            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:22%"></div></div>
+            <span class="milestone-marks">Marks: 10%</span>
+          </div>
+        </div>
+        <div class="milestone milestone-left" data-aos="fade-left">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Progress Presentation II</h3>
+            <span class="milestone-date">Jun 2024</span>
+            <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:40%"></div></div>
+            <span class="milestone-marks">Marks: 18%</span>
+          </div>
+        </div>
+        <div class="milestone milestone-right" data-aos="fade-right">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Website Assessment</h3>
+            <span class="milestone-date">Mar 2024</span>
+            <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:42%"></div></div>
+            <span class="milestone-marks">Marks: 2%</span>
+          </div>
+        </div>
+        <div class="milestone milestone-left" data-aos="fade-left">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Logbook</h3>
+            <span class="milestone-date">Jun 2024</span>
+            <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:45%"></div></div>
+            <span class="milestone-marks">Marks: 3%</span>
+          </div>
+        </div>
+        <div class="milestone milestone-right" data-aos="fade-right">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Final Report</h3>
+            <span class="milestone-date">Mar 2024</span>
+            <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:64%"></div></div>
+            <span class="milestone-marks">Marks: 19%</span>
+          </div>
+        </div>
+        <div class="milestone milestone-left" data-aos="fade-left">
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <h3>Final Presentation & Viva</h3>
+            <span class="milestone-date">Jun 2024</span>
+            <p>Viva is held individually to assess each members contribution to the project.</p>
+            <div class="milestone-progress"><div class="milestone-progress-bar" style="width:84%"></div></div>
+            <span class="milestone-marks">Marks: 20%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="section">
+      <h2 class="section-title">Project Documents</h2>
+      <div class="downloads-grid">
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-file-pdf"></i></div>
+          <h3>Project Proposal</h3>
+          <span class="download-date">Submitted: August 16, 2024</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-file-word"></i></div>
+          <h3>Status Document I</h3>
+          <span class="download-date">Submitted: December 06, 2024</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-file-alt"></i></div>
+          <h3>Status Document II</h3>
+          <span class="download-date">Submitted: March 17, 2025</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-image"></i></div>
+          <h3>Research Paper</h3>
+          <span class="download-date">Submitted: February 16, 2025</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-book"></i></div>
+          <h3>Individual Reports</h3>
+          <span class="download-date">Submitted: April 11, 2025</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-file-archive"></i></div>
+          <h3>Final Reports</h3>
+          <span class="download-date">Submitted: April 11, 2025</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <!-- New Card 1 -->
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-file-archive"></i></div>
+          <h3>Log Book</h3>
+          <span class="download-date">In Progress</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-file-powerpoint"></i></div>
+          <h3>Project Poster</h3>
+          <span class="download-date">In Progress</span>
+          <a href="#" class="download-btn">View File</a>
+        </div>
+        <!-- New Card 2 -->
+        
+      </div>
+    </section>
+
+    <!-- Presentations Section -->
+    <section id="presentations" class="section">
+      <h2 class="section-title">Presentations</h2>
+      <div class="presentations-grid downloads-grid">
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-chalkboard-teacher"></i></div>
+          <h3>Proposal Presentation</h3>
+          <span class="download-date">Submitted: July 2025</span>
+          <a href="#" class="download-btn">View Presentation</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-chart-bar"></i></div>
+          <h3>Progress Presentation I</h3>
+          <span class="download-date">Submitted: December 2025</span>
+          <a href="#" class="download-btn">View Presentation</a>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-award"></i></div>
+          <h3>Progress Presentation II</h3>
+          <span class="download-date">Submitted: March 2025</span>
+          <a href="#" class="download-btn">View Presentation</a>
+        </div>
+      </div>
+      <div class="presentations-row-center">
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa fa-file-powerpoint"></i></div>
+          <h3>Final Presentation</h3>
+          <span class="download-date">Submitted: May 2025</span>
+          <a href="#" class="download-btn">View Presentation</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Meet The Team Behind DynetSecure Section -->
+    <section id="about" class="section our-team-section">
+      <h2 class="section-title" data-aos="fade-up">Meet The Team Behind DynetSecure</h2>
+      <p class="our-team-subtitle" data-aos="fade-up" data-aos-delay="100">A dedicated team of professionals working together to bring you the best solutions.</p>
+      <div class="our-team-profile-grid">
+        <div class="our-team-profile-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="profile-img-wrap">
+            <img src="images/shashika.jpg" alt="Dr. Sanvitha Kasthuriaarachchi" class="profile-img">
+          </div>
+          <div class="profile-socials">
+            <a href="https://www.linkedin.com/in/sanvitha-kasthuriaarachchi" class="profile-social-link circle-dark" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:sanvitha@email.com" class="profile-social-link circle-dark" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=EXAMPLE1" class="profile-social-link circle-accent" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Ms. Shashika Lokuliyana</div>
+            <div class="profile-role">Project Supervisor</div>
+            <div class="profile-divider"></div>
+            <div class="profile-affiliation">Computer Systems and Network Engineering Program Coordinator | Senior Lecturer</div>
+            <div class="profile-affiliation">Sri Lanka Institute of Information Technology</div>
+          </div>
+        </div>
+        <div class="our-team-profile-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="profile-img-wrap">
+            <img src="images/narmada.jpg" alt="Ms. Shashika Lokuliyana" class="profile-img">
+          </div>
+          <div class="profile-socials">
+            <a href="https://www.linkedin.com/in/lokesha-weerasinghe" class="profile-social-link circle-dark" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:lokesha@email.com" class="profile-social-link circle-dark" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=EXAMPLE2" class="profile-social-link circle-accent" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Ms. Narmada Gamage</div>
+            <div class="profile-role">Co-Supervisor</div>
+            <div class="profile-divider"></div>
+            <div class="profile-affiliation">Faculty of Computing | Computer Systems Engineering | Lecturer</div>
+            <div class="profile-affiliation">Sri Lanka Institute of Information Technology</div>
+          </div>
+        </div>
+        <div class="our-team-profile-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="profile-img-wrap">
+            <img src="images/profile1.jpg" alt="Lakma" class="profile-img">
+          </div>
+          <div class="profile-socials">
+            <a href="https://www.linkedin.com/in/lakma" class="profile-social-link circle-dark" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:lakma@email.com" class="profile-social-link circle-dark" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Lakma Wickramasinghe</div>
+            <div class="profile-role">Team Leader</div>
+            <div class="profile-divider"></div>
+            <div class="profile-title">Undergraduate</div>
+            <div class="profile-affiliation">Faculty of Computing | Computer Systems & Networking Engineering</div>
+            <div class="profile-affiliation">Sri Lanka Institute of Information Technology</div>
+          </div>
+        </div>
+        <div class="our-team-profile-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="profile-img-wrap">
+            <img src="images/profile1.jpg" alt="Duhun De Silva" class="profile-img">
+          </div>
+          <div class="profile-socials">
+            <a href="https://www.linkedin.com/in/duhun-de-silva" class="profile-social-link circle-dark" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:duhun@email.com" class="profile-social-link circle-dark" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Rochell Costa </div>
+            <div class="profile-role">Team Member</div>
+            <div class="profile-divider"></div>
+            <div class="profile-title">Undergraduate</div>
+            <div class="profile-affiliation">Faculty of Computing | Computer Systems & Networking Engineering</div>
+            <div class="profile-affiliation">Sri Lanka Institute of Information Technology</div>
+          </div>
+        </div>
+        <div class="our-team-profile-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="profile-img-wrap">
+            <img src="images/profile1.jpg" alt="Gimhana Deshapriya" class="profile-img">
+          </div>
+          <div class="profile-socials">
+            <a href="https://www.linkedin.com/in/gimhana-deshapriya" class="profile-social-link circle-dark" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:gimhana@email.com" class="profile-social-link circle-dark" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Saneru Dissanayake</div>
+            <div class="profile-role">Team Member</div>
+            <div class="profile-divider"></div>
+            <div class="profile-title">Undergraduate</div>
+            <div class="profile-affiliation">Faculty of Computing | Computer Systems & Networking Engineering</div>
+            <div class="profile-affiliation">Sri Lanka Institute of Information Technology</div>
+          </div>
+        </div>
+        <div class="our-team-profile-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="profile-img-wrap">
+            <img src="images/profile1.jpg" alt="Sehara De Silva" class="profile-img">
+          </div>
+          <div class="profile-socials">
+            <a href="https://www.linkedin.com/in/sehara-de-silva" class="profile-social-link circle-dark" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:sehara@email.com" class="profile-social-link circle-dark" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Waruna Abayakoon</div>
+            <div class="profile-role">Team Member</div>
+            <div class="profile-divider"></div>
+            <div class="profile-title">Undergraduate</div>
+            <div class="profile-affiliation">Faculty of Computing | Computer Systems & Networking Engineering</div>
+            <div class="profile-affiliation">Sri Lanka Institute of Information Technology</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-form-card" data-aos="fade-right">
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="contact-btn">
+              <span>Send Message</span>
+              <i class="fa fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info-card-modern" data-aos="fade-left">
+          <h3>Contact Information</h3>
+          <p class="contact-desc">We'd love to hear from you. Reach out to us for any questions or feedback.</p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span class="contact-info-icon"><i class="fa fa-envelope"></i></span>
+              <div>
+                <span class="contact-info-label">Email Us</span>
+                <span class="contact-info-value">dynetsecure@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon"><i class="fa fa-map-marker-alt"></i></span>
+              <div>
+                <span class="contact-info-label">Location</span>
+                <span class="contact-info-value">Informatics Institute of Technology, Sri Lanka</span>
+              </div>
+            </div>
+          </div>
+          <hr class="contact-divider">
+          <div class="contact-socials-modern">
+            <span class="contact-socials-title">Connect With Us</span>
+            <div class="contact-socials-row">
+              <a href="#" class="contact-social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="contact-social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="contact-social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="contact-social-icon"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 DynetSecure. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/4e9b1b6e8b.js" crossorigin="anonymous"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+      offset: 80
+    });
+  </script>
+</body>
+</html> 
